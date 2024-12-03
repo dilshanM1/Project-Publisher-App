@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_ckground"
+    android:padding="16dp">
+
+    <!-- ImageView to display the selected or current image -->
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/baseline_edit_24" />
+
+    <!-- Button to open gallery and select an image -->
+    <ImageButton
+        android:id="@+id/selectImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_add_24"
+        android:contentDescription="@string/select_image"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <!-- EditText for entering the new caption -->
+    <EditText
+        android:id="@+id/editCaptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Enter new caption" />
+
+    <!-- Button to save changes -->
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F57C00"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+</LinearLayout>

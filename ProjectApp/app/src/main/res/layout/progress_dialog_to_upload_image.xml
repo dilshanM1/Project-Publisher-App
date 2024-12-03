@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/rounded_ckground"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/Upadating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Upadating Your Post"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/Line1Id"
+        android:layout_width="300dp"
+        android:layout_height="0.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Upadating"
+        android:layout_marginTop="5dp"
+        android:background="#7A494646" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/Line1Id"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progress_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Please wait..."
+        android:textSize="16sp" />
+</RelativeLayout>

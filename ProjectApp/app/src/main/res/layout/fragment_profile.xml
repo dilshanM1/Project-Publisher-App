@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/back5"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:padding="16dp">
+
+        <!-- Profile Card -->
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/profileCardView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="8dp"-->
+        <!--            android:outlineProvider="bounds"-->
+        <!--            android:padding="16dp">-->
+
+        <RelativeLayout
+            android:id="@+id/detailsBckId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_ckground"
+            android:padding="16dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilecoverView"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:padding="4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_ckground" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="20dp"
+                android:outlineProvider="background"
+                android:outlineSpotShadowColor="@color/black"
+                android:background="@drawable/baseline_person_24"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- Profile Picture -->
+
+            <View
+                android:id="@+id/Line1Id"
+                android:layout_width="300dp"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/profileImageView"
+                android:layout_marginTop="10dp"
+                android:background="#7A494646" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:hint="Name"
+                android:layout_below="@id/profileImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#BE000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/nameTextView"
+                android:id="@+id/emaillogo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/baseline_mail_outline_24"/>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:hint="Email"
+                android:layout_below="@id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/emaillogo"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp" />
+
+
+            <!-- Phone Number -->
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/phoneNumberLogo"
+                android:layout_below="@id/emailTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/baseline_contact_phone_24"/>
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:hint="PhoneNumber"
+                android:layout_below="@id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/phoneNumberLogo"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp" />
+
+
+<!--            &lt;!&ndash; Account Number &ndash;&gt;-->
+<!--            <View-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:id="@+id/accountNumberLogo"-->
+<!--                android:layout_below="@id/phoneTextView"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/baseline_numbers_24"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/accountNumberTextView"-->
+<!--                android:hint="AccountNumber"-->
+<!--                android:layout_below="@id/phoneTextView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toEndOf="@+id/accountNumberLogo"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:textSize="16sp" />-->
+
+
+
+
+
+
+            <!--                <View-->
+            <!--                    android:id="@+id/poitView"-->
+            <!--                    android:layout_below="@id/accountNumberTextView"-->
+            <!--                    android:layout_width="400dp"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:backgroundTint="#1e3b66"-->
+            <!--                    android:background="@drawable/roundbtn"/>-->
+            <!--                <View-->
+            <!--                    android:id="@+id/poitViewtoCount"-->
+            <!--                    android:layout_below="@id/accountNumberTextView"-->
+            <!--                    android:layout_width="200dp"-->
+            <!--                    android:layout_height="60dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:outlineSpotShadowColor="@color/black"-->
+            <!--                    android:backgroundTint="#388E3C"-->
+            <!--                    android:background="@drawable/roundbtn"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="50dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:background="@drawable/coinlogo"-->
+            <!--                    android:layout_marginLeft="8dp"-->
+            <!--                    android:layout_marginTop="17dp"-->
+            <!--                    android:layout_below="@id/accountNumberTextView"-->
+            <!--                    />-->
+            <!--
+                           <ImageButton
+                               android:id="@+id/addBurnsButtonId"
+                               android:layout_below="@id/accountNumberTextView"
+                               android:layout_width="50dp"
+                               android:layout_height="50dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_alignParentRight="true"
+                               android:layout_marginRight="20dp"
+                               android:background="@drawable/add_photo"/>
+                           Points -->
+
+
+            <View
+                android:id="@+id/Line2Id"
+                android:layout_width="300dp"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/phoneTextView"
+                android:layout_marginTop="10dp"
+                android:background="#7A494646" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logOutButtonId"
+                android:layout_below="@id/phoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#2F3333"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp" />
+
+
+
+
+        </RelativeLayout>
+
+        <!-- GridView -->
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsBckId"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_ckground"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/nameLogoIconId"-->
+        <!--            android:layout_width="110dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@drawable/name"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginBottom="60dp"/>-->
+
+
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
